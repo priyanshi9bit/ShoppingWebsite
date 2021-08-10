@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>register</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <script>
+        function showAlert() {
+          var myText = "Your response has been submitted";
+          alert (myText);
+        }
+        </script>
+    <a href="../index.html" class="btn">Home Page</a>
+    <div class="data">
+        <form method "get">
+            First name:<br>
+            <input type="text" name="fname"><br>
+            <br>
+            Last name:<br>
+            <input type="text" name="lname"><br> 
+            <br>           
+            Email id<br>
+            <input type="email"name="email" required><br><!--put required for req fields-->
+            <br>
+            Gender<br>
+            <input type="radio" name="gender" value="male">male<br><!--specifies only1can be selected-->
+            <input type="radio" name="gender" value="fmale">female<br>
+            <input type="radio" name="gender" value="others">others<br>
+            <br>
+            Query<br>
+            <textarea></textarea><br>
+            <input type="submit" value="register" onclick="showAlert()"><!--specifies what to display on box-->
+            <input type="reset">
+            
+        </form>
+    </div>
+</body>
+
+
+</html>
